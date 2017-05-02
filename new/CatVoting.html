@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Vote your cat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Vote your cat</h1>
+    please select one cat you like
+    <br>
+    <table>
+      <tr>
+        <td>
+          <img height="200px" width="250px" src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+        </td>
+        <td>
+          count: <span id="catOneCount">0</span>
+          <br>
+          <button onclick="increaseCount()">Vote</button>
+        </td>
+        <td>
+          <img height="200px" width="250px" src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>
+                count: <span id="catTwoCount">0</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="increasetwoCount()">Vote</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <img height="200px" width="250px" src="https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+        </td>
+        <td>
+          count: <span id="catThreeCount">0</span>
+          <br>
+          <button onclick="increaseThreeCount()">Vote</button>
+        </td>
+        <td>
+          <img height="200px" width="250px" src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+        </td>
+        <td>
+          count: <span id="catFourCount">0</span>
+          <br>
+          <button onclick="increaseFourCount()">Vote</button>
+        </td>
+      </tr>
+    </table>
+    <script>
+    var cat1 = 0
+    var cat2 = 0
+    var cat3 = 0
+    var cat4 = 0
+    function increaseCount(){
+      cat1 += 1
+      $("#catOneCount").html(cat1)
+    }
+    function increasetwoCount(){
+      cat2 += 1
+      $("#catTwoCount").html(cat2)
+    }
+    function increaseThreeCount(){
+      cat3 += 1
+      $("#catThreeCount").html(cat3)
+    }
+    function increaseFourCount(){
+      cat4 += 1
+      $("#catFourCount").html(cat4)
+    }
+    </script>
+  </body>
+</html>

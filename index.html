@@ -1,0 +1,126 @@
+<html>
+<head>
+  <title>My online resume</title>
+  <link href="cover.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="site-wrapper">
+
+     <div class="site-wrapper-inner">
+
+       <div class="cover-container">
+
+         <div class="masthead clearfix">
+           <div class="inner">
+             <h3 class="masthead-brand">고양이</h3>
+             <nav>
+               <ul class="nav masthead-nav">
+                 <li id="navHomeTab"><a href="#" onclick="gotoHome()">Home</a></li>
+                 <li id="navPictureTab"><a href="#" onclick="gotoPicture()">Picture</a></li>
+                 <li id="navContactTab"><a href="#" onclick="gotoContact()">Contact</a></li>
+               </ul>
+             </nav>
+           </div>
+         </div>
+
+         <div class="inner cover" id="Home">
+           <p class="lead">
+             <img style="height:300px;" src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+           </p>
+
+           <h1 class="cover-heading">고양이는 정의다</h1>
+
+           <p>고양이의, 고양이를 위한, 고양이에 의한</p>
+           <p>사람들 다 고양이 있는데, 나만 없어 (. ·ω·.)</p>
+           <br>
+           <p class="lead">
+             <button><a href="#" class="btn btn-lg btn-default">고양이를 데려오자</a></button>
+             <a href="#" class="btn btn-lg btn-default">사는건 무리니 사진이나 보자</a>
+           </p>
+         </div>
+
+         <div class="inner cover" id="Picture">
+           <p class="lead">
+             <img style="height:300px;" src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+           </p>
+
+           <h1 class="cover-heading">고양이는 정의다</h1>
+
+           <p>고양이의, 고양이를 위한, 고양이에 의한</p>
+           <p>사람들 다 고양이 있는데, 나만 없어 (. ·ω·.)</p>
+           <br>
+           <p class="lead">
+             <button><a href="#" class="btn btn-lg btn-default">고양이를 데려오자</a></button>
+             <button><a href="#" class="btn btn-lg btn-default">사는건 무리니 사진이나 보자</a></button>
+           </p>
+         </div>
+
+         <div class="inner cover" id="Contact">
+           <p class="lead">
+             <img style="height:300px;" src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image not here">
+           </p>
+
+           <h1 class="cover-heading">고양이는 정의다</h1>
+
+           <p>고양이의, 고양이를 위한, 고양이에 의한</p>
+           <p>사람들 다 고양이 있는데, 나만 없어 (. ·ω·.)</p>
+           <br>
+           <p class="lead">
+             <button><a href="#" class="btn btn-lg btn-default">고양이를 데려오자</a></button>
+             <a href="#" class="btn btn-lg btn-default">사는건 무리니 사진이나 보자</a>
+           </p>
+         </div>
+
+         <div class="mastfoot">
+           <div class="inner">
+             <p>Copyright <i class="fa fa-copyright"></i> Cat, by @Cat.</p>
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+
+   </div>
+
+   <script>
+   //run whatever is inside this function
+   //when the page loads
+  $(function(){
+    $("#Picture").hide();
+    $("#Contact").hide();
+  })
+
+   function gotoHome(){
+     $("#Picture").hide();
+     $("#Contact").hide();
+     $("#Home").slideDown();
+     $("#navHomeTab").attr('class', 'active');
+     $("#navPictureTab").attr('class', '');
+     $("#navContactTab").attr('class', '');
+   }
+
+   function gotoPicture(){
+     $("#Home").hide();
+     $("#Contact").hide();
+     $("#Picture").slideDown();
+     $("#navPictureTab").attr('class', 'active');
+     $("#navContactTab").attr('class', '');
+     $("#navHomeTab").attr('class', '');
+   }
+
+   function gotoContact(){
+     $("#Picture").hide();
+     $("#Home").hide();
+     $("#Contact").slideDown();
+     $("#navContactTab").attr('class', 'active');
+     $("#navPictureTab").attr('class', '');
+     $("#navHomeTab").attr('class', '');
+   }
+
+   </script>
+</body>
+</html>
